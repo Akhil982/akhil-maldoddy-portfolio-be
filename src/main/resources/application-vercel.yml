@@ -1,0 +1,22 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /akhil-maldoddy
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    generate-ddl: true
+
+  datasource:
+    url: jdbc:postgresql://db.prisma.io:5432/postgres?sslmode=require
+    username: 9969f6fc3070a017586ba6384cbdf78ee6741466ff507032d608647f7728c79d
+    password: sk_ce88GM5Y9DgJ8RyowPk0w
+    driver-class-name: org.postgresql.Driver
+
+  sql:
+    init:
+      mode: always
