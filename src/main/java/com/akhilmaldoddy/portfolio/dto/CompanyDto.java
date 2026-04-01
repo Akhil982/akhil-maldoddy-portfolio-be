@@ -10,11 +10,10 @@ import java.util.List;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class ProjectsDto {
-    private String projectId;
-    private String projectName;
-    private String projectDescription;
+public class CompanyDto {
+    private String companyId;
+    private String companyName;
     private LocalDate startDate;
     private LocalDate endDate;
-    private List<String> skills;
+    private List<ProjectsDto> projects;
 }
